@@ -21,3 +21,25 @@
 - **热度**: ⭐⭐⭐⭐⭐
 - **适合知乎原因**: 话题性极强，人物IP效应，但深度有限
 - **状态**: 已使用 (2026-04-14)
+
+### 3. Claude Code桌面版重大改版：聚焦多Agent管理
+
+- **原文链接**: https://www.theverge.com/news/911975/claude-code-redesign-focuses
+- **补充信息**: Anthropic发布Claude Code桌面版新设计，新增侧边栏管理多个会话、拖拽布局自定义工作区、内置终端与文件编辑器，更适合多任务并行。
+- **热度**: ⭐⭐⭐
+- **适合知乎原因**: 开发者群体关注，产品体验分析
+- **状态**: 未使用
+
+### 4. OpenAI收购AI个人理财创业公司Hiro
+
+- **原文链接**: https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/
+- **热度**: ⭐⭐⭐
+- **适合知乎原因**: AI+金融交叉点，OpenAI战略扩张
+- **状态**: 未使用
+
+### 5. 微软测试OpenClaw式AI Agent用于Copilot
+
+- **原文链接**: https://www.theverge.com/tech/911080/microsoft-ai-openclaw-365-businesses
+- **热度**: ⭐⭐⭐
+- **适合知乎原因**: Agent生态竞争，OpenClaw是近期热门话题
+- **状态**: 未使用

@@ -57,6 +57,15 @@ User says anything like "写今天的知乎博客" / "daily blog" / "发知乎" 
 
 Translate the entire article into Chinese following these principles:
 
+0. **Creative freedom** — You are NOT a translation machine. You are a tech columnist writing for Zhihu. Feel free to:
+   - Restructure, merge, and reorder content for better flow and impact
+   - Add context, background, and connections the original article doesn't mention (but mark them as your own commentary in the 评论 section)
+   - Omit boring or irrelevant parts of the original
+   - Use a mix of sources — when the original article is thin, supplement with information from other sources you fetch
+   - Write a narrative, not a faithful translation. The goal is 抓人眼球 (eye-catching), not 忠实还原 (faithful reproduction)
+   - You do NOT need to cite the original source verbatim. References go in the subtle section between main text and commentary. In the body, just write naturally as if you are the author.
+   - When combining multiple sources, synthesize them into a single coherent story rather than presenting "Source A says X, Source B says Y"
+
 1. **Accuracy first** — no distorting facts, numbers, names, or technical claims.
 2. **Natural flow** — read like a Chinese tech columnist wrote it, not like machine translation. Vary sentence length. Use Chinese idioms / 四字词语 where fitting.
 3. **AI-flavor avoidance**:
@@ -221,6 +230,7 @@ ZHIHU/blogs/{YYYY-MM-DD}-{slug}.md
 - [ ] Translation reads like a human wrote it — not stiff, not "AI-flavored"
 - [ ] Cover image present immediately after title line
 - [ ] No emoji in section headers or commentary heading
+- [ ] Creative freedom applied — restructured, synthesized, not just a line-by-line translation
 - [ ] All images appear at their natural positions in the text (not grouped at the end)
 - [ ] References placed between main text and commentary, in subtle/reduced format
 - [ ] Technical terms handled per Terminology rules
