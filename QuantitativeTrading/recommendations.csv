@@ -1,0 +1,4 @@
+date,stock_code,stock_name,price_low,price_high,target_price,stop_loss,position,hold_days,reason,score,signals,notes
+2026-04-15,sh.600233,圆通速递,21.07,21.93,21.81,20.42,1/4仓,3-5天,均线多头+MACD金叉+KDJ金叉+放量,10,"MA多头,站上20日线,MACD金叉,KDJ金叉,量比2.2",涨幅7.88%适中未涨停
+2026-04-15,sh.600550,保变电气,15.71,16.35,17.23,15.23,1/4仓,2-5天,MACD金叉+放量+RSI中性,8,"MA多头,站上20日线,MACD金叉,量比2.1",换手9%高关注度
+2026-04-15,sh.600267,海正药业,11.16,11.62,12.50,10.82,1/4仓,3-7天,药价新政+MACD金叉+KDJ金叉,5,"站上20日线,MACD金叉,KDJ金叉",涨停次日等回调介入

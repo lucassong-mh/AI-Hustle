@@ -52,6 +52,12 @@ User says anything like "写今天的知乎博客" / "daily blog" / "发知乎" 
 - Use `webfetch` to retrieve the full article. If needed, fetch supplementary sources for richer context.
 - Extract: title, author/date, body text, and **all image URLs** (preserve original image links).
 - If the article is paywalled or incomplete, try alternative sources or notify the user.
+- **Network note**: If `webfetch` fails to access a URL (403, timeout, connection refused, etc.), the user has a VPN proxy configured. Try setting environment variables before retrying:
+  ```
+  export http_proxy="http://127.0.0.1:7897"
+  export https_proxy="http://127.0.0.1:7897"
+  ```
+  These match the proxy settings in `~/.zshrc`. After setting them, retry the `webfetch`.
 
 ### Step 3 — Translation
 
