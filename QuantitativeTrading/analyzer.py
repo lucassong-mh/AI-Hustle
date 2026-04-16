@@ -251,12 +251,11 @@ def generate_signals(df, stock_code="", stock_name=""):
     support = float(_low.tail(20).min()) if len(df) >= 20 else float(_low.min())
     resistance = float(_high.tail(20).max()) if len(df) >= 20 else float(_high.max())
 
-    buy_low = round(close_val * 0.98, 2)
-    buy_high = round(close_val * 1.01, 2)
-    target = max(round(resistance, 2), round(buy_high * 1.03, 2))
-    stop = round(close_val * 0.95, 2)
-    profit_pct = round((target - buy_high) / buy_high * 100, 1)
-    loss_pct = round((buy_high - stop) / buy_high * 100, 1)
+    buy_price = round(close_val * 0.99, 2)
+    target = max(round(resistance, 2), round(buy_price * 1.03, 2))
+    stop = round(buy_price * 0.95, 2)
+    profit_pct = round((target - buy_price) / buy_price * 100, 1)
+    loss_pct = round((buy_price - stop) / buy_price * 100, 1)
     profit_loss_ratio = round(profit_pct / loss_pct, 1) if loss_pct > 0 else 999
 
     if profit_pct < 2:
@@ -265,10 +264,9 @@ def generate_signals(df, stock_code="", stock_name=""):
 
     signals["support"] = round(support, 2)
     signals["resistance"] = round(resistance, 2)
-    signals["buy_price_low"] = buy_low
-    signals["buy_price_high"] = buy_high
-    signals["stop_loss"] = stop
+    signals["buy_price"] = buy_price
     signals["target_price"] = target
+    signals["stop_loss"] = stop
     signals["profit_pct"] = profit_pct
     signals["loss_pct"] = loss_pct
     signals["profit_loss_ratio"] = profit_loss_ratio
@@ -310,7 +308,7 @@ def main():
                 continue
             all_signals.append(signals)
             print(f"  {code} {signals.get('name','')}: 评分={signals['score']}, 判定={signals['recommendation']}")
-            print(f"    买={signals['buy_price_low']}-{signals['buy_price_high']}, 目标={signals['target_price']}(+{signals['profit_pct']}%), 止损={signals['stop_loss']}(-{signals['loss_pct']}%), 盈亏比={signals['profit_loss_ratio']}")
+            print(f"    买入={signals['buy_price']}, 目标={signals['target_price']}(+{signals['profit_pct']}%), 止损={signals['stop_loss']}(-{signals['loss_pct']}%), 盈亏比={signals['profit_loss_ratio']}")
             for s in signals["signals"][:3]:
                 print(f"    - {s}")
 
