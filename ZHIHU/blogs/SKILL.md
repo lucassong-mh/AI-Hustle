@@ -80,6 +80,9 @@ Translate the entire article into Chinese following these principles:
    - No unnecessary hedging ("在某种程度上", "可能也许大概").
    - Avoid over-polite or robotic closings.
    - **No emoji in section headers** (no 💡, 📊, 🔥 etc. — readers can smell AI from a mile away).
+   - **No preachy or condescending tone** — you are a peer discussing, not a teacher lecturing. Avoid "应该认识到", "我们必须", "不可否认的是", "很显然". Don't tell the reader what to think. Share observations, raise questions, offer perspectives — but always as one curious person talking to another.
+   - **No excessive questioning** — one rhetorical question per article at most. Too many "?" reads as sensationalist, not thoughtful. Prefer declarative sentences that make the reader think, rather than questions that tell them what to think about.
+   - **地道的理工男语气** — calm, precise, understated. Not loud, not sensational. State things plainly, let the irony or insight speak for itself. Think "闲聊中发现了一个有意思的角度", not "大家注意了！这件事的真相竟然是！".
 4. **Terminology**:
    - Keep widely-known English terms (GPT, LLM, RAG, Agent, etc.) as-is.
    - For niche terms, provide Chinese translation with English in parentheses on first use.
@@ -93,9 +96,15 @@ Translate the entire article into Chinese following these principles:
 Every blog post must have a cover image placed immediately after the `# [Tag] Title` line, before any body text.
 
 **Source priority:**
-1. The article's own hero image (if available and high quality)
-2. A relevant Unsplash image (use `https://images.unsplash.com/photo-{id}?w=1200&q=80` format)
-3. If neither is available, leave a placeholder note for the user
+1. **Original article's hero image** — the best option. Always try to extract it from the source article first. The Verge, TechCrunch etc. usually have high-quality featured images.
+2. **Relevant stock image** — if the original has no image or the URL is broken, actively search for a thematically relevant replacement. Use `webfetch` to browse Unsplash or Pexels search pages, or try known good Unsplash photo IDs. The image must be **thematically relevant** to the article — not just "tech" or "robot", but specifically matching the topic:
+   - Corporate rivalry / competition → boardroom, handshake with tension, split screen imagery
+   - Open source / code → code on screen, terminal, collaborative coding
+   - Security / hacking → lock, shield, network visualization
+   - Social impact → crowd, data visualization, charts
+   - AI models → neural networks, abstract data visualization
+3. **Verify every image URL** — always `curl -s -o /dev/null -w "%{http_code}" "<url>"` to confirm HTTP 200 before using it. Never use a 404 image.
+4. If no relevant image is available after searching, leave a placeholder note for the user.
 
 **Format in the markdown file:**
 
@@ -234,7 +243,8 @@ ZHIHU/blogs/{YYYY-MM-DD}-{slug}.md
 ## Quality Checklist (self-verify before delivering)
 
 - [ ] Translation reads like a human wrote it — not stiff, not "AI-flavored"
-- [ ] Cover image present immediately after title line
+- [ ] Cover image present immediately after title line, thematically relevant (not just generic "tech" image)
+- [ ] All image URLs verified as HTTP 200
 - [ ] No emoji in section headers or commentary heading
 - [ ] Creative freedom applied — restructured, synthesized, not just a line-by-line translation
 - [ ] All images appear at their natural positions in the text (not grouped at the end)

@@ -39,3 +39,13 @@
 有几点新的要求：
 1.为当前项目建立readme或者说供AI使用的context，比如类似CLAUDE.md，介绍项目结构
 2.我们在每次为知乎写完blog之后，要同步为小红书建立专属的blog，内容就是从知乎blog里截取，不能超过500字，分一些段落，小红书是那种占一个手机屏幕的照片文字，然后可以有1或0张图，这个可以加到现有的skill或者建新的，你来决定。在你建完后，为ZHIHU/blogs/2026-04-14-斯坦福报告AI鸿沟.md，ZHIHU/blogs/2026-04-15-Anthropic封杀中国.md，ZHIHU/blogs/2026-04-15-Claude-Code-Rust重写.md，这三篇，放在XHS/posts里
+
+
+---
+
+让我没开始今天的blog撰写，我来提供2个话题：
+1.OpenAI 开撕 Anthropic 称300亿收入有80亿是造假，如何看待当前两家AI巨头的竞争？
+2.最近 Hermes 的风评越来越好，OpenClaw会被新出大火的 Hermes agent 击败吗？
+
+3.完成知乎blog的撰写后，直接进到总结成小红书blog的部分，昨天的anthropic不能在中国大陆使用的blog爆火，我们应该给自己鼓个掌，我把用户的评论放在XHS/posts/comments-anthropic封杀中国，你可以去看下大家对什么感兴趣，然后，丰富一下XHS/posts/SKILL.md，看看能怎么变得更吸引人，要花更多功夫在小红书文字润色上，当然，知乎blog的更多前期工作也必不可少
+4.我之前说小红书不能放图片，但是如果有很贴切的图片的话，帮我贴一张，我可以放在评论第一个
