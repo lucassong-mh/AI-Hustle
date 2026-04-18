@@ -1,3 +1,15 @@
 ai_quant_trade
 output
 .DS_Store
+
+# Video files - too large for git
+BILIBILI/videos/**/*.mp4
+BILIBILI/videos/**/*.webm
+BILIBILI/videos/**/*.mkv
+BILIBILI/videos/**/*.avi
+BILIBILI/videos/**/*.jpg
+BILIBILI/videos/**/*.jpeg
+BILIBILI/videos/**/*.png
+
+# Third-party tools
+BILIBILI/youtube-watcher-1.0.0/
