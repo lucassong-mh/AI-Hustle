@@ -49,6 +49,19 @@ User says "找时尚内容" / "找今天的穿搭" / "发小红书时尚" / "时
 
 男女皆可，不限风格（街头、奢侈、极简、复古、高街等）。
 
+### Content Mix Principle (内容节奏原则)
+
+不要连续发太多同一类型的内容。保持多样性，让读者的 feed 不单调：
+
+| 帖子类型 | 占比 | 示例 |
+|---------|------|------|
+| 接地气/可复刻 | ~40% | 潮流公式、搭配教程、平价单品推荐、趋势解读 |
+| 话题性/热点 | ~30% | 明星穿搭、联名发售、时装周、文化事件 |
+| 品牌上新 | ~20% | 新品发布、联名系列、限量款 |
+| 视觉冲击 | ~10% | 大秀Look、街拍精选、大片赏析 |
+
+**规则**：如果连续2篇都是"品牌上新"或"时装周"，下一篇必须换一个更接地气的类型（如潮流公式、单品推荐、明星日常穿搭），确保读者不会觉得内容割裂或过于小众。
+
 ## Source Priority
 
 ### 国际源
@@ -208,15 +221,16 @@ If the exact item cannot be identified, provide the brand and a similar/represen
 
 The post copy must follow 小红书发布格式。所有内容合并为一段**可直接复制粘贴**的纯文本，无需额外格式化。
 
-#### Title — ≤20 Chinese characters
+#### Title — ≤20 Chinese characters (不含Tag前缀)
 
 Punchy, specific, hook-driven. Must make people stop scrolling.
 
+The `[Tag]` prefix goes in a separate `## 标签前缀` field, NOT in the title itself.
+
 Good examples:
-- "Stella McCartney×H&M联名¥99起"
-- "Bella同款水晶裤只要¥169"
+- "Stella×H&M联名回归，¥99起"
+- "银色鞋怎么搭？4个公式直接抄"
 - "今年秋冬最值得入手的5件单品"
-- "Dior大秀这次又搞了什么"
 
 Bad examples:
 - "今天的穿搭分享" (无聊)
@@ -313,10 +327,13 @@ mkdir -p "XHS/FASHION/posts/{date}-{slug}/images"
 **File format for `meta.md` (图文帖):**
 
 ```markdown
-# [Tag] 帖子标题（≤20字）
+# 帖子标题（≤20字，不含Tag）
 
 ## 类型
 图文
+
+## 标签前缀
+潮流速递
 
 ## 图片文件
 images/01.jpg — 图片描述
@@ -348,10 +365,13 @@ images/03.jpg — 图片描述
 **File format for `meta.md` (视频帖):**
 
 ```markdown
-# [Tag] 帖子标题（≤20字）
+# 帖子标题（≤20字，不含Tag）
 
 ## 类型
 视频
+
+## 标签前缀
+秀场直击
 
 ## 视频文件
 video.mp4
@@ -391,14 +411,16 @@ Present the user with a consolidated summary:
 
 User reviews and posts manually — I handle all the preparation, they do the final click.
 
-### Image Notes
+## 小红书合集
 
-**I cannot edit images** (add text overlays, annotations, watermarks). For single-item highlights on images, the user can:
-- Use XHS's built-in text/layout tools
-- Use separate annotation apps
-- Rely on the detailed product list in the body text instead
+### 合集名称
+**潮流前线｜OOTD灵感库**
 
-All product details, prices, and links go in the **正文** and **单品清单** sections — this is the primary information carrier, not the image itself.
+### 合集简介
+穿搭灵感秒懂，单品价格全列。从时装周到日常通勤，从联名发售到平替好物，每天一条让你出门不用想穿什么。拆解明星同款，追踪街拍趋势，所有单品品牌+价格一站查完。抄作业就对了。
+
+### 合集封面建议
+使用帖子中视觉冲击力最强的图片作为封面（全身Look照优先）。
 
 ## Candidate Pool (候选库)
 

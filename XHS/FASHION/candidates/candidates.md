@@ -20,11 +20,11 @@
 
 ### 3. Fall 2026时装周精选——巴黎/米兰街拍
 
-- **来源**: https://www.vogue.com/fashion-shows （多个品牌大秀页面）
+- **来源**: https://www.vogue.com/fashion/street-style （多个街拍gallery）
 - **类型**: 时装周 / 街拍
 - **热度**: ⭐⭐⭐⭐
-- **关键单品**: Maison Margiela, Valentino, Miu Miu, Louis Vuitton, Chanel, Balenciaga等品牌Look
-- **适合XHS原因**: 最新时装周内容丰富，图片量大，可做多个品牌拆解帖
+- **关键单品**: CBK极简风, 围巾搭法, 腰带趋势, 豹纹, Chrome鞋
+- **适合XHS原因**: 2026FW街拍趋势汇总，12个趋势可拆成多个帖，接地气单品多
 - **状态**: 未使用
 
 ### 4. Air Jordan 4028 "Black/Metallic Gold"
@@ -34,4 +34,40 @@
 - **热度**: ⭐⭐⭐
 - **关键单品**: Air Jordan 4028
 - **适合XHS原因**: 球鞋受众精准，新配色发布
+- **状态**: 未使用
+
+### 5. Rosé × Tiffany Blue Book Gala 钻石look
+
+- **来源**: https://www.vogue.com/slideshow/rose-tiffany-and-co-blue-book-event-diary
+- **类型**: 明星穿搭 / 珠宝
+- **热度**: ⭐⭐⭐⭐
+- **关键单品**: Tiffany珠宝, 礼服裙
+- **适合XHS原因**: BLACKPINK Rosé的Tiffany活动look，饭圈热度高，珠宝+礼服拆解
+- **状态**: 未使用
+
+### 6. Margot Robbie Anti-Boho夏日穿搭
+
+- **来源**: https://www.vogue.com/article/margot-robbie-is-anti-boho-chic-for-summer
+- **类型**: 明星穿搭 / 潮流趋势
+- **热度**: ⭐⭐⭐⭐
+- **关键单品**: Leather, Denim, Suede
+- **适合XHS原因**: Margot Robbie反boho趋势，皮衣/牛仔/麂皮，接地气可复刻
+- **状态**: 未使用
+
+### 7. Fall 2026 FW街拍12大趋势
+
+- **来源**: https://www.vogue.com/article/the-real-world-fashion-week-edition-12-top-street-style-trends-of-the-fall-2026-season
+- **类型**: 潮流趋势 / 街拍
+- **热度**: ⭐⭐⭐⭐⭐
+- **关键单品**: CBK极简, 围巾, 腰带, 豹纹, Chrome鞋, Shaggy质感, 短裤+长袜
+- **适合XHS原因**: 12个趋势大汇总，可拆成系列帖子，每个趋势一篇
+- **状态**: 未使用
+
+### 8. Michelle Obama春日出街公式
+
+- **来源**: https://www.vogue.com/article/michelle-obama-spring-outfit-formula
+- **类型**: 明星穿搭 / 潮流公式
+- **热度**: ⭐⭐⭐
+- **关键单品**: 针织衫, 阔腿裤, 平底鞋
+- **适合XHS原因**: 接地气的春日穿搭公式，数量型标题适合小红书
 - **状态**: 未使用
