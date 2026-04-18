@@ -1,6 +1,6 @@
 # [AI搞事情了] 封杀中国、被盗蒸馏、自己还抄袭：Anthropic的2025有多精彩
 
-![封面](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80)
+![封面](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80)
 
 一个AI公司的创始人，职业生涯起步于中国百度——然后他创建的公司，成了全球封杀中国最狠的AI企业。
 

@@ -1,6 +1,6 @@
 # [越封越火] 60天超越Linux和React十年+的star，OpenClaw凭什么？
 
-![封面](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80)
+![封面](https://openclaw.ai/og-image.png)
 
 3月3日，OpenClaw以约25万颗GitHub星超越React，成为GitHub史上star最多的软件项目。
 

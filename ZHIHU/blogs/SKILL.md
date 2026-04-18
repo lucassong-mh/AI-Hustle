@@ -107,14 +107,19 @@ Every blog post must have a cover image placed immediately after the `# [Tag] Ti
 
 **Source priority:**
 1. **Original article's hero image** — the best option. Always try to extract it from the source article first. The Verge, TechCrunch etc. usually have high-quality featured images.
-2. **Relevant stock image** — if the original has no image or the URL is broken, actively search for a thematically relevant replacement. Use `webfetch` to browse Unsplash or Pexels search pages, or try known good Unsplash photo IDs. The image must be **thematically relevant** to the article — not just "tech" or "robot", but specifically matching the topic:
-   - Corporate rivalry / competition → boardroom, handshake with tension, split screen imagery
-   - Open source / code → code on screen, terminal, collaborative coding
-   - Security / hacking → lock, shield, network visualization
+2. **Product/brand official image** — if the article is about a specific product (e.g., a robot, an AI model launch, a GitHub project), find the official image from the product's website or social preview (OG image). Examples:
+   - OpenClaw → `https://openclaw.ai/og-image.png`
+   - Anthropic blog → `https://cdn.sanity.io/images/4zrzovbb/website/...` (from their blog page)
+   - Unitree → `https://www.unitree.com/images/...` (from their product page)
+   - GitHub repo → org avatar or repo social preview
+3. **Relevant stock image** — only if options 1 and 2 fail. The image must be **thematically relevant** to the article — not just "tech" or "robot", but specifically matching the topic:
+   - Corporate rivalry → split screen, competition imagery
+   - Open source / code → code on screen, terminal
+   - Security → lock, shield, network visualization
    - Social impact → crowd, data visualization, charts
-   - AI models → neural networks, abstract data visualization
-3. **Verify every image URL** — always `curl -s -o /dev/null -w "%{http_code}" "<url>"` to confirm HTTP 200 before using it. Never use a 404 image.
-4. If no relevant image is available after searching, leave a placeholder note for the user.
+4. **NEVER reuse the same generic Unsplash image across multiple posts.** Each post should have a distinct, relevant cover. If you catch yourself using `photo-1635070041078-e363dbe005cb` or `photo-1677442136019-21780ecad95` again, stop and find something specific.
+5. **Verify every image URL** — always `curl -s -o /dev/null -w "%{http_code}" "<url>"` to confirm HTTP 200 before using it. Never use a 404 image.
+6. If no relevant image is available after searching, leave a placeholder note for the user.
 
 **Format in the markdown file:**
 

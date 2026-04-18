@@ -1,4 +1,4 @@
-<!-- 封面图: https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80 -->
+<!-- 封面图: https://openclaw.ai/og-image.png -->
 
 Anthropic每封一次就涨一波星
 

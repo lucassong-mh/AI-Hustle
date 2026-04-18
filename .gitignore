@@ -1,6 +1,8 @@
 ai_quant_trade
 output
 .DS_Store
+PICS
+*.jpg
 
 # Video files - too large for git
 BILIBILI/videos/**/*.mp4
