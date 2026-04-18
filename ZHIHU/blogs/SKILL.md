@@ -85,7 +85,17 @@ Translate the entire article into Chinese following these principles:
    - **地道的理工男语气** — calm, precise, understated. Not loud, not sensational. State things plainly, let the irony or insight speak for itself. Think "闲聊中发现了一个有意思的角度", not "大家注意了！这件事的真相竟然是！".
 4. **Terminology**:
    - Keep widely-known English terms (GPT, LLM, RAG, Agent, etc.) as-is.
-   - For niche terms, provide Chinese translation with English in parentheses on first use.
+   - **Do NOT translate domain-specific terms into forced Chinese equivalents.** Keep the original English term if it is the common way practitioners refer to it. Examples:
+     - skill → skill (NOT "技能")
+     - benchmark → benchmark (NOT "基准测试" unless explaining to a lay audience)
+     - token → token (NOT "令牌")
+     - agent → Agent (NOT "智能体" unless the context demands it)
+     - effort level → effort level (NOT "努力级别")
+     - CVE → CVE (NOT "通用漏洞披露")
+     - OAuth → OAuth (NOT "开放授权")
+     - run rate → run rate (NOT "运行速率")
+     - fine-tune → fine-tune (NOT "微调")
+   - For truly niche terms that most Chinese readers won't know, provide Chinese translation with English in parentheses on first use, then stick to English thereafter.
    - **Avoid obscure acronyms** in titles/tags. If a tag references a concept like AGI, use the Chinese equivalent (通用智能) or a more accessible phrase.
 5. **Images**: Insert each image **at its natural position** in the text (right after the paragraph it relates to), NOT grouped at the end. Use original URLs; do not rehost.
 
@@ -152,7 +162,9 @@ Format:
 # [Tag] 原标题的中文翻译
 ```
 
-The bracketed tag rotates. Pick one that fits the article's vibe:
+The bracketed tag rotates. Pick one that fits the article's vibe. The tag should be punchy, varied, and avoid repetition across consecutive posts.
+
+**Tag pool (pick or create new):**
 
 | Tag | When to use |
 |-----|-------------|
@@ -164,11 +176,27 @@ The bracketed tag rotates. Pick one that fits the article's vibe:
 | 你的下一份工作 | Workforce / automation impact |
 | 开源万岁 | Open-source related |
 | 人类观察中 | Philosophical / societal angle |
+| 别慌，还没AGI | Reality check on AGI hype |
+| 谁在焦虑 | Public sentiment, anxiety, inequality |
+| 技术债务 | When technical debt, bugs, or security flaws are the story |
+| 碳基观察 | Human perspective on AI events (from 专栏 name) |
+| 拔剑四顾 | Competitive landscape, rivalries, showdowns |
+| 越封越火 | When bans/backlash backfire and make something stronger (OpenClaw after Anthropic ban, etc.) |
+| 账本翻开 | Revenue, funding, business model, financial disputes |
+| 底牌亮了 | Leaks, reveals, internal memos, source code exposed |
+| 权力的游戏 | Corporate power plays, government vs tech, geopolitical angle |
+| 谁的规则 | When the question is about who makes the rules |
+| 江湖规矩 | Ethics, norms, industry standards, "unwritten rules" |
+| 冷思考 | When everyone's hyping, it's time to think clearly |
+| 一地鸡毛 | Messy aftermath, unintended consequences, things gone wrong |
 
 **Tag rules**:
 - Must be ≤7 characters.
-- Must be in plain Chinese or widely understood English — no obscure acronyms.
+- Must be in plain Chinese — no obscure acronyms, no recycled English.
 - Feel free to create new tags on the fly as long as they are punchy and accessible.
+- **Rotate tags** — do not reuse the same tag in consecutive posts. If you used [开源万岁] yesterday, use something else today even if the topic is also open-source related.
+- The tag should add emotional color or a perspective, not just categorize. "碳基观察" is better than "AI新闻"; "账本翻开" is better than "商业新闻".
+- **The tag must make sense at first glance** — the reader should immediately get what angle you're taking. "越封越火" is clear (bans backfire). "底牌亮了" is clear (a reveal). Avoid tags so abstract that the reader has to guess, like "暗流涌动" or "时代之问".
 
 ### Step 7 — References Placement
 

@@ -60,6 +60,7 @@ This is the main content that appears as a text-image card on XHS. Rules:
 2. **Structure**: 3-5 short paragraphs, each 1-3 sentences. Break between every 2-3 lines for readability on mobile. NEVER write a wall of text.
 3. **Tone**: Conversational, punchy, opinionated. Like talking to a smart friend, not writing an essay. Use 呀/啊/吧 sparingly for natural flow but never sound cute. **No preachy tone** — you're a peer sharing thoughts, not a teacher telling people what to think. Avoid "应该认识到", "我们必须", "不可否认". Raise questions, share observations, offer angles — as one curious person to another. **No excessive questioning** — at most one "?" per post. Prefer declarative sentences. Think 谦逊理工男: calm, precise, understated. Let the irony or insight speak for itself.
 4. **No section headers** — just line breaks. No `##`, no bold `**`, no emoji.
+5. **No forced Chinese translations for domain terms** — same rule as Zhihu blog: skill stays skill, token stays token, benchmark stays benchmark, etc. XHS readers are tech-savvy enough.
 5. **Optional cover image**: If there is a fitting image from the Zhihu blog (usually the cover), note it as a comment at the top of the file. The user can post it as the first image on XHS. This is optional — only include it when the image is visually striking and directly relevant.
 6. **Must include**: At least one concrete number or data point from the original blog.
 7. **Must include**: A clear opinion or hot take. XHS rewards takes, not reports.
